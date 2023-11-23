@@ -11,11 +11,12 @@ This project  will  allows real-time visualization of the status of bike station
 
 ## Project Architecture
 
-![Project Architecture](images/Screenshot from 2023-11-23 17-46-31.png)
+![Project Architecture](images/Screenshot%20from%202023-11-23%2017-46-31.png)
 
 Description of the project architecture:
 
-- **Kafka**: Used for real-time streaming of bike station data.
+- **Kafka**: Used for real-time streaming of bike station data using availabe API.
 - **Spark**: Processes and analyzes the streaming data from Kafka for real-time insights.
 - **Elasticsearch**: Stores the processed data for efficient querying and visualization.
+![kibana](images/Screenshot%20from%202023-11-23%2017-44-02.png)
 
