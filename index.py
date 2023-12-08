@@ -8,17 +8,14 @@ def create_index(client, index,mapping) -> None:
 
 
 if __name__ == "__main__":
-
-    
+ 
     from elasticsearch import Elasticsearch
     es = Elasticsearch("http://localhost:9200")
-    if es.indices.exists(index="station-velos"):
-        es.indices.delete(index="station-velos")
     mapping = {
         "mappings": {
             "properties": {
             "numbers": { "type": "integer" },
-            "contract_name": { "type": "text" },
+            "contract_name": { "type": "keyword" },
             "banking": { "type": "text" },
             "bike_stands": { "type": "integer" },
             "available_bike_stands": { "type": "integer" },
@@ -28,10 +25,12 @@ if __name__ == "__main__":
             "position": {
                 "type": "geo_point"
             },
-            "timestamps": { "type": "text" }
+            "last_update": { "type": "date",  "format": "yyyy-MM-dd HH:mm:ss||epoch_millis"}
+                     
             }
         }
+        
         }
 
     es = Elasticsearch("http://localhost:9200")
-    create_index(client=es, index="station-velos",mapping=mapping)
+    create_index(client=es, index="bikestation",mapping=mapping)

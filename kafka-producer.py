@@ -32,10 +32,10 @@ while True:  # Infinite loop for continuous streaming, you may adjust this as ne
                     'address': line['address'],
                     'status': line['status'],
                     'position':line['position'],
-                    'timestamps': utcfromtimestamp
+                    'last_update': utcfromtimestamp
                 }
 
-                producer.send('station-velos', value=d)
+                producer.send('bike-station', value=d)
                 print(d)
                 time.sleep(2)
                 
