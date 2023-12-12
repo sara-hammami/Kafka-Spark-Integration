@@ -19,4 +19,8 @@ Description of the project architecture:
 - **Spark**: Processes and analyzes the streaming data from Kafka for real-time insights.
 - **Elasticsearch**: Stores the processed data for efficient querying and visualization.
 ![kibana](images/Screenshot%20from%202023-11-23%2017-44-02.png)
-
+##Visualization
+Inspect the evolution of availble bikes in 3 different cities in real time :
+![numbre of available bikes ](images/Screenshot%20from%202023-12-08%2020-35-33.png)
+A capture showing bruxelle city map with available bikes stands .
+![example of map visualisation  ](images/Screenshot%20from%202023-12-08%2021-11-15.png)
