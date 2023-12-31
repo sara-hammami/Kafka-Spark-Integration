@@ -11,7 +11,7 @@ This project  will  allows real-time visualization of the status of bike station
 
 ## Project Architecture
 
-![Project Architecture](images/Screenshot%20from%202023-11-23%2017-46-31.png)
+![Project Architecture](images/image.png)
 
 Description of the project architecture:
 
